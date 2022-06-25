@@ -1,0 +1,56 @@
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.projects__filter {
+  margin-bottom: 50px;
+}
+
+.filter__item {
+  margin-right: 8px;
+}
+
+.filter__btn {
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: inherit;
+  color: inherit;
+
+  background-color: var(--team-gb-color);
+  border-radius: 4px;
+  border: none;
+
+  transition: var(--color-transition), var(--bg-transition), box-shadow 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--bg-header-color);
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
